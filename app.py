@@ -30,8 +30,8 @@ def generate_insights(company_name, product_name,company_url, company_competitor
         2. Competitor strategies and positioning (including {company_competitors})
         3. Market opportunities
         4. Potential risks or challenges
-        Present findings under clear headings with no more than 3 bullet points per section, ensuring insights are actionable and relevant for sales strategy.
-        """)
+        Present findings under clear headings with no more than 3 bullet points per section, ensuring insights are actionable and relevant for sales strategy. 
+        5. Complete the report with a summary based on your findings for the report""")
     ]
 
     model_response = llm.invoke(messages)
@@ -41,8 +41,8 @@ def generate_insights(company_name, product_name,company_url, company_competitor
 
 
 # ============= UI ==============
-st.title("Sales Agent")
-st.subheader("Generate a report")
+st.title("Sales Assistant Agent 📊 ")
+st.subheader("Provide the needed insights for a sales report")
 st.divider()
 
 # company name
